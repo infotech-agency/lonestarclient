@@ -1,16 +1,5 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/admin/page": "app/admin/page.js",
-  "/courses/page": "app/courses/page.js",
-  "/about/page": "app/about/page.js",
-  "/admission-form/page": "app/admission-form/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/our-placement/page": "app/our-placement/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/privacy/page": "app/privacy/page.js",
   "/page": "app/page.js",
-  "/terms/page": "app/terms/page.js",
-  "/testimonials/page": "app/testimonials/page.js",
   "/[slug]/page": "app/[slug]/page.js",
-  "/blog/[slug]/page": "app/blog/[slug]/page.js"
+  "/courses/page": "app/courses/page.js"
 }
