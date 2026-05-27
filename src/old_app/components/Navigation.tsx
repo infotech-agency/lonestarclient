@@ -796,6 +796,10 @@ export function Navigation() {
           label: "Financial Modelling",
           href: "/financial-modelling-course-delhi",
         },
+        {
+          label:"All Courses",
+          href:"/courses"
+        }
       ],
     },
     { label: "About Us", href: "/about" },

@@ -4233,7 +4233,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 
 import { motion } from "motion/react";
-;
+
 import {
   BookOpen,
   Clock,
@@ -4869,8 +4869,16 @@ export default function CourseDetailPage({ slug }: { slug?: string }) {
   });
 
   const params = useParams();
-  const routeSlug = slug || (params?.slug as string);
-  console.log(routeSlug);
+  // const routeSlug = slug || (params?.slug as string);
+  // const routeSlug =
+  // slug || (Array.isArray(params?.slug)
+  //   ? params.slug[0]
+  //   : params?.slug);
+  // console.log(routeSlug);
+  const routeSlug =
+  slug || (Array.isArray(params?.slug)
+    ? params.slug[0]
+    : params?.slug);
   // Scroll to top when component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
