@@ -7,35 +7,59 @@ import { BASE_URL } from "../../../utils/baseUrl";
 interface Props { onLogin: (token: string) => void; }
 
 export default function AdminLogin({ onLogin }: Props) {
-  const [email, setEmail] = useState("admin@lonestar.com");
-  const [password, setPassword] = useState("Admin@123");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [showPw, setShowPw] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   setError("");
+  //   try {
+  //     const res = await fetch(`${BASE_URL}/api/auth/login`, 
+  //     // const res = await fetch("https://slategrey-worm-160018.hostingersite.com/api/auth/login", 
+  //       {
+  //       method: "POST", headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ email, password })
+  //     });
+  //     console.log(res)
+  //     const data = await res.json();
+  //     if (!res.ok) throw new Error(data.error || "Login failed");
+  //     localStorage.setItem("admin_token", data.token);
+  //     onLogin(data.token);
+  //   } catch (err: any) {
+  //     setError(err.message);
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError("");
-    try {
-      const res = await fetch(`${BASE_URL}/api/auth/login`, 
-      // const res = await fetch("https://slategrey-worm-160018.hostingersite.com/api/auth/login", 
-        {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password })
-      });
-      console.log(res)
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Login failed");
-      localStorage.setItem("admin_token", data.token);
-      onLogin(data.token);
-    } catch (err: any) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
+  e.preventDefault();
+  setLoading(true);
+  setError("");
 
+  try {
+    // Fixed credentials
+    const fixedEmail = "admin@lonestar.in";
+    const fixedPassword = "Admin@123";
+
+    // Check credentials
+    if (email === fixedEmail && password === fixedPassword) {
+      const fakeToken = "lonestar_admin_token";
+
+      localStorage.setItem("admin_token", fakeToken);
+      onLogin(fakeToken);
+    } else {
+      throw new Error("Invalid email or password");
+    }
+  } catch (err: any) {
+    setError(err.message);
+  } finally {
+    setLoading(false);
+  }
+};
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 to-blue-700 flex items-center justify-center p-4">
       <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }}
