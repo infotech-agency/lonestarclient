@@ -203,7 +203,8 @@ import CourseDetailPage from '../../old_app/pages/CourseDetailPage';
 // Reuse fetch with caching
 async function getCourse(slug: string) {
   const res = await fetch(`${BASE_URL}/api/courses/${slug}`, {
-    next: { revalidate: 3600 }, // ISR — re-fetch every hour
+    // next: { revalidate: 3600 }, // ISR — re-fetch every hour
+    cache: 'no-store'
   });
   if (!res.ok) return null;
   return res.json();
