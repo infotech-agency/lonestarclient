@@ -512,8 +512,8 @@ export default function App() {
       
 
       <div className="min-h-screen bg-white">
-        {/* <Navigation /> */}
-        <Banners />
+        {/* <Navigation />
+        <Banners /> */}
         <Hero />
         <Swiper />
 
