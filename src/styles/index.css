@@ -1,3 +1,26 @@
+/* @import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+@plugin "@tailwindcss/typography"; */
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+@plugin "@tailwindcss/typography";
+/* ReactQuill list fix — prose ke saath kaam karne ke liye */
+.prose ul,
+.prose ol {
+  padding-left: 1.75rem;
+}
+.prose ul {
+  list-style-type: disc !important;
+}
+.prose ol {
+  list-style-type: decimal !important;
+}
+.prose li {
+  margin: 0.35rem 0;
+}
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
