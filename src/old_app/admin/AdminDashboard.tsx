@@ -5279,11 +5279,15 @@
 
 
 "use client";
-
+import dynamic from 'next/dynamic';
 import { useEffect, useRef, useState, type ChangeEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BASE_URL } from "../../../utils/baseUrl";
-import ReactQuill from "react-quill";
+// import ReactQuill from "react-quill";
+const ReactQuill = dynamic(() => import('react-quill'), { 
+  ssr: false,
+  loading: () => <div className="min-h-[320px] rounded-2xl border border-slate-200 bg-slate-50 animate-pulse" />
+});
 import "react-quill/dist/quill.snow.css";
 import {
   Plus,
