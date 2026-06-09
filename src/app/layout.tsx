@@ -119,6 +119,22 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Lone Star Academy",
+      "url": "https://www.lonestaracademy.in/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.lonestaracademy.in/data-science-course-online-with-placement-delhi/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }),
+  }}
+/>
       </head>
       <body>
         <div id="root">{children}</div>
