@@ -263,13 +263,6 @@ export default async function Page({
   if (!course) return notFound();
 
   // Pass the fetched data as props to client component
-  // return <CourseDetailPage slug={slug} courseData={course} />;
-  if (!course) return notFound();
+  return <CourseDetailPage slug={slug} courseData={course} />;
 
-return (
-  <div>
-    <h1>{course.name}</h1>
-    <p>{course.description}</p>
-  </div>
-);
 }
