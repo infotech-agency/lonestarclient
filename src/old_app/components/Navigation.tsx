@@ -811,10 +811,10 @@ export function Navigation() {
     { label: "Testimonials", href: "/testimonials" },
     { label: "Blog", href: "/blog" },
     { label: "Contact Us", href: "/contact" },
-     {
-          label:"Careers",
-          href:"/careers"
-        }
+    //  {
+    //       label:"Careers",
+    //       href:"/careers"
+    //     }
   ];
 
   const toggleMobileDropdown = (label: string) => {

@@ -56,9 +56,7 @@ export default function NotFound() {
       </div>
 
       {/* FOOTER-STYLE TEXT (Optional) */}
-      <div className="absolute bottom-8 text-gray-600 text-xs uppercase tracking-[0.2em]">
-        Error Code: NotFound
-      </div>
+     
     </div>
   );
 }
