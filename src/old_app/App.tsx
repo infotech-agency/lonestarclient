@@ -461,6 +461,8 @@ import { useParams } from "next/navigation";
 import { BASE_URL } from "../../utils/baseUrl";
 import ShortTermCourses from "./components/ShortTermCourses";
 import Testimonials from "./components/VideoTestimonials";
+import BlogPage from './pages/BlogPage';
+import BlogSection from './pages/BlogSection';
 
 function CourseDetails() {
   const { slug } = useParams();
@@ -853,6 +855,7 @@ export default function App() {
         <OurBranches />
         <Faq />
         <LoneStarBanner />
+        <BlogSection/>
         <Footer />
         <FloatingButtons />
 
