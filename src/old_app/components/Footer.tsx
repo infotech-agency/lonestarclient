@@ -44,11 +44,11 @@ import Link from "next/link";
               <ul className="space-y-5">
                 {[
                   { label: "Home", href: "/" },
-                  { label: "About Us", href: "/about" },
-                  { label: "All Courses", href: "/courses" },
-                  { label: "Testimonials", href: "/testimonials" },
-                  { label: "Our Placement", href: "/our-placement" },
-                  { label: "Contact Us", href: "/contact" },
+                  { label: "About Us", href: "/about/" },
+                  { label: "All Courses", href: "/courses/" },
+                  { label: "Testimonials", href: "/testimonials/" },
+                  { label: "Our Placement", href: "/our-placement/" },
+                  { label: "Contact Us", href: "/contact/" },
                 ].map(({ label, href }) => (
                   <li key={label}>
                     <a
@@ -70,12 +70,12 @@ import Link from "next/link";
 
               <ul className="space-y-5">
                 {[
-                  { label: "Business Analytics", href: "/business-analytics-course-delhi" },
-                  { label: "Data Analytics", href: "/data-analytics-courses-online-delhi" },
-                  { label: "Data Science", href: "/data-science-course-online-with-placement-delhi" },
-                  { label: "Digital Marketing", href: "/best-online-digital-marketing-courses-delhi" },
-                  { label: "Cloud Computing", href: "/cloud-computing-online-courses-delhi" },
-                  { label: "Financial Modeling", href: "/financial-modelling-course-delhi" },
+                  { label: "Business Analytics", href: "/business-analytics-course-delhi/" },
+                  { label: "Data Analytics", href: "/data-analytics-courses-online-delhi/" },
+                  { label: "Data Science", href: "/data-science-course-online-with-placement-delhi/" },
+                  { label: "Digital Marketing", href: "/best-online-digital-marketing-courses-delhi/" },
+                  { label: "Cloud Computing", href: "/cloud-computing-online-courses-delhi/" },
+                  { label: "Financial Modeling", href: "/financial-modelling-course-delhi/" },
                 ].map(({ label, href }) => (
                   <li key={label}>
                     <a
