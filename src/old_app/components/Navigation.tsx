@@ -800,10 +800,10 @@ export function Navigation() {
           label:"All Courses",
           href:"/courses"
         },
-        {
-          label:"Careers",
-          href:"/careers"
-        }
+        // {
+        //   label:"Careers",
+        //   href:"/careers"
+        // }
       ],
     },
     { label: "About Us", href: "/about" },
