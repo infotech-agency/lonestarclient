@@ -1450,6 +1450,7 @@ import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { BASE_URL } from "../../../utils/baseUrl";
 import NotFound from "./NotFound";
+import axios from "axios";
 
 interface Course {
   _id: string;
@@ -2001,8 +2002,28 @@ export default function CourseDetailPage({
 }) {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
   const [showMobileForm, setShowMobileForm] = useState(false);
+  const [allCourses, setAllCourses] = useState(null);
   const course = courseData;
-  console.log("course", course);
+  const [loading, setLoading] = useState(false);
+  // console.log("course", course);
+
+const getAllCourses = async () => {
+  try {
+    setLoading(true);
+    const response = await axios.get(`${BASE_URL}/api/courses`);
+    setAllCourses(response.data);
+    console.log("All courses fetched:", response.data);
+  } catch (err) {
+    console.error("Error fetching courses:", err);
+  } finally {
+    setLoading(false);
+  }
+};
+
+// useEffect to fetch courses on mount
+useEffect(() => {
+  getAllCourses();
+}, []);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -2706,7 +2727,88 @@ export default function CourseDetailPage({
             </div>
           </div>
         </section>
+  {/* OTHER COURSES SECTION */}
+<section className="py-12 md:py-16 bg-slate-50 border-t border-slate-200">
+  <div className="container mx-auto px-4">
+    <div className="mb-10 text-center">
+      <h2 className="text-3xl font-bold text-slate-900 md:text-4xl">
+        Explore Our Other Courses
+      </h2>
+      <p className="mt-3 text-slate-600">
+        Discover more industry-relevant programs to accelerate your career.
+      </p>
+    </div>
 
+    {loading ? (
+      <div className="flex justify-center py-12">
+        <div className="h-12 w-12 animate-spin rounded-full border-4 border-blue-600 border-t-transparent" />
+      </div>
+    ) : (
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {allCourses
+          ?.filter((c: Course) => c._id !== course._id) // Exclude current course
+          .slice(0, 8) // Limit to 8 courses
+          .map((c: Course) => {
+            // Get image URL (handle both local and Cloudinary URLs)
+            const courseImage = c.image 
+              ? (c.image.startsWith('http') ? c.image : `${BASE_URL}${c.image}`)
+              : pageImages[c.name] || "/images/default-course.jpg";
+            
+            // Get slug for the link
+            const courseSlug = c.slug || c.name.toLowerCase().replace(/\s+/g, "-");
+            
+            return (
+              <motion.a
+                key={c._id}
+                href={`/${courseSlug}/`}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+                className="group overflow-hidden rounded-2xl bg-white shadow-md transition hover:shadow-xl"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={courseImage}
+                    alt={c.name}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    onError={(e) => {
+                      // Fallback if image fails to load
+                      (e.target as HTMLImageElement).src = "/images/default-course.jpg";
+                    }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition group-hover:opacity-100" />
+                  
+                  {/* Price Badge */}
+                  {c.price && (
+                    <div className="absolute bottom-3 right-3 rounded-full bg-black/70 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+                      {c.price}
+                    </div>
+                  )}
+                </div>
+                <div className="p-5">
+                  <h3 className="text-lg font-bold text-slate-900 transition group-hover:text-blue-600">
+                    {c.name}
+                  </h3>
+                  <p className="mt-1 text-sm text-slate-500 line-clamp-2">
+                    {c.description?.slice(0, 80)}...
+                  </p>
+                  <div className="mt-4 flex items-center text-sm font-semibold text-blue-600">
+                    Learn More
+                    <ArrowRight size={16} className="ml-2 transition group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </motion.a>
+            );
+          })}
+      </div>
+    )}
+
+    {!loading && allCourses?.filter((c: Course) => c._id !== course._id).length === 0 && (
+      <p className="text-center text-slate-500">No other courses available.</p>
+    )}
+  </div>
+</section>
         <Footer />
       </main>
     </>
