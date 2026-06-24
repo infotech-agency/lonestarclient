@@ -89,6 +89,8 @@
 //   );
 // }
 // BlogPage.tsx (updated)
+
+
 import { useState, useEffect } from "react";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
@@ -159,7 +161,7 @@ export default function BlogPage() {
                       {blog.excerpt}
                     </p>
                     <Link
-                      href={`/blog/${blog.slug}`}
+                      href={`${process.env.NEXT_PUBLIC_SITE_URL}/blog/${blog.slug}`}
                       className="mt-4 inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700"
                     >
                       Read More
