@@ -332,7 +332,7 @@ export default function CoursesPage() {
             transition={{ duration: 0.5 }}
             className="mb-4 text-4xl font-bold md:text-5xl lg:text-6xl"
           >
-            Explore Our <span className="text-orange-400">Professional Courses</span>
+            Explore Our  <span className="text-orange-400">Professional Courses</span>
           </motion.h1>
 
           <motion.p

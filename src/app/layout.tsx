@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   keywords: "data science institute in delhi, best data science institute in delhi, best data science institute in india, data science institute, digital marketing institute in delhi, best digital marketing institute, best digital marketing institute in delhi, digital marketing institute, best digital marketing institute in delhi with placement, top digital marketing institute in delhi, best offline digital marketing institute in delhi",
   openGraph: {
     type: 'website',
-    url: 'https://lonestaracademy.in/',
+    url: 'https://www.lonestaracademy.in/',
     title: 'Lone Star Academy | Best Data Science Institute Delhi',
     description: "Delhi\'s #1 Data Science & Digital Marketing training institute. 1,00,000+ students trained. Microsoft & Google certified trainers.",
     images: ['/ssssss.png'],

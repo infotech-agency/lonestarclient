@@ -2,12 +2,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
-;
+import { Metadata } from "next";
 import { Navigation } from "../components/Navigation";
 import { Footer } from "../components/Footer";
 import { Search, IndianRupee, ArrowRight, BookOpen } from "lucide-react";
 import { BASE_URL } from "../../../utils/baseUrl";
 import ShortTermCourses from "../components/ShortTermCourses";
+
 
 const API_BASE = BASE_URL;
 // const API_BASE = "https://slategrey-worm-160018.hostingersite.com";
