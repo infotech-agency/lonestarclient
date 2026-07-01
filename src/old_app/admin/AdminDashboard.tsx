@@ -8559,13 +8559,15 @@ export default function AdminDashboard({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-slate-950/60 p-4 backdrop-blur-sm"
+            // className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-slate-950/60 p-4 backdrop-blur-sm"
+            className="fixed inset-0 z-50 flex items-start justify-center overflow-hidden bg-slate-950/60 p-4 backdrop-blur-sm"
           >
             <motion.div
               initial={{ scale: 0.96, y: 30 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.96, y: 20 }}
-              className="my-8 w-full max-w-4xl overflow-hidden rounded-[28px] border border-white/20 bg-white shadow-2xl"
+              // className="my-8 w-full max-w-4xl overflow-hidden rounded-[28px] border border-white/20 bg-white shadow-2xl"
+              className="my-8 flex max-h-[90vh] w-full max-w-4xl flex-col overflow-y-auto rounded-[28px] border border-white/20 bg-white shadow-2xl"
             >
               <div className="flex items-center justify-between border-b border-slate-100 bg-gradient-to-r from-slate-50 to-indigo-50 px-6 py-5">
                 <div>
@@ -8714,7 +8716,7 @@ export default function AdminDashboard({
                       <label className="mb-1.5 block text-sm font-semibold text-slate-700">
                         Blog Content *
                       </label>
-                      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white focus-within:border-indigo-400 focus-within:ring-4 focus-within:ring-indigo-100">
+                      <div className="rounded-2xl border border-slate-200 bg-white focus-within:border-indigo-400 focus-within:ring-4 focus-within:ring-indigo-100">
                         <ReactQuill
                           theme="snow"
                           value={blogForm.content}
@@ -8726,7 +8728,12 @@ export default function AdminDashboard({
                           }
                           modules={blogEditorModules}
                           formats={blogEditorFormats}
-                          className="[&_.ql-container]:min-h-[320px] [&_.ql-container]:border-0 [&_.ql-editor]:min-h-[320px] [&_.ql-editor]:text-base [&_.ql-toolbar]:border-0 [&_.ql-toolbar]:border-b [&_.ql-toolbar]:border-slate-200"
+                          // className="[&_.ql-container]:min-h-[320px] [&_.ql-container]:border-0 [&_.ql-editor]:min-h-[320px] [&_.ql-editor]:text-base [&_.ql-toolbar]:border-0 [&_.ql-toolbar]:border-b [&_.ql-toolbar]:border-slate-200"
+                           className="[&_.ql-container]:min-h-[320px] [&_.ql-container]:border-0 [&_.ql-editor]:min-h-[320px] [&_.ql-editor]:text-base
+
+       [&_.ql-toolbar]:sticky [&_.ql-toolbar]:top-0 [&_.ql-toolbar]:z-20
+       [&_.ql-toolbar]:border-0 [&_.ql-toolbar]:border-b [&_.ql-toolbar]:border-slate-200
+       [&_.ql-toolbar]:bg-white [&_.ql-toolbar]:rounded-t-2xl"
                         />
                       </div>
                       <p className="mt-2 text-xs text-slate-500">

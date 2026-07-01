@@ -7,6 +7,7 @@
 @import './theme.css';
 @plugin "@tailwindcss/typography";
 /* ReactQuill list fix — prose ke saath kaam karne ke liye */
+
 .prose ul,
 .prose ol {
   padding-left: 1.75rem;
