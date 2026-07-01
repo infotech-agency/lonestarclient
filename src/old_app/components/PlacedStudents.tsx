@@ -472,9 +472,9 @@ export function PlacedStudents() {
             transition={{ duration: 0.5 }}
             className="mb-10"
           >
-            <h1 className="text-3xl font-bold text-[#0b3a82] sm:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold text-[#0b3a82] sm:text-4xl lg:text-5xl">
               Our Placements
-            </h1>
+            </h2>
             <p className="mt-4 max-w-4xl text-sm leading-7 text-[#35558f] sm:text-base">
               Our students are placed in top MNC companies with high-paying job roles.
             </p>

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Courses | Lone Star Academy",
+  title: "Professional Courses | Lone Star Academy Delhi & Online",
   description:
-    "Explore Data Science, Digital Marketing, Business Analytics and other professional courses at Lone Star Academy.",
+    " Explore industry-focused courses in Data Science, Data Analytics, Business Analytics, Digital Marketing, Cloud Computing, and Financial Modeling with placement support.",
   alternates: {
     canonical: "https://www.lonestaracademy.in/courses",
   },

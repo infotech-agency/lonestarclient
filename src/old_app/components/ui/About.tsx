@@ -182,12 +182,12 @@ export default function AboutIntroSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="max-w-2xl text-5xl font-extrabold leading-tight tracking-tight text-slate-950 md:text-6xl lg:text-7xl">
+            <h2 className="max-w-2xl text-5xl font-extrabold leading-tight tracking-tight text-slate-950 md:text-6xl lg:text-7xl">
               About{" "}
               <span className="text-blue-700">
                 Lone Star Academy
               </span>
-            </h1>
+            </h2>
 
             <p className="mt-10 max-w-2xl text-lg leading-9 text-slate-700">
               Lone Star Academy is a leading training institute in India for{" "}

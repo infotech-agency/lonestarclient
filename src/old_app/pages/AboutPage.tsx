@@ -98,7 +98,7 @@ const companies = [
 export default function AboutPage() {
   return (
     <>
-      <title>About Us | Lone Star Academy</title>
+      <title>About Lone Star Academy | Data Science Training Institute</title>
       <meta
         name="description"
         content="Learn about Lone Star Academy - a leading institute for Data Science, Digital Marketing, and Business Analytics with expert trainers, practical learning, and strong placement support."

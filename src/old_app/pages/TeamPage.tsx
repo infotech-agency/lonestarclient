@@ -90,7 +90,7 @@ function CompanyLogo({
 export default function PlacementPage() {
   return (
     <>
-      <title>Our Placements | Lone Star Academy</title>
+      <title> Placement Support | Lone Star Academy Career Assistance</title>
       <meta
         name="description"
         content="Explore Lone Star Academy placements, hiring partners, student success stories, and career opportunities with top companies across India."
@@ -117,9 +117,9 @@ export default function PlacementPage() {
                 Trusted Career Training Institute
               </span>
 
-              <h1 className="mb-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+              <h2 className="mb-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
                 Our <span className="text-orange-400">Placement</span> Success
-              </h1>
+              </h2>
 
               <p className="max-w-2xl text-base leading-7 text-blue-100 sm:text-lg">
                 Lone Star Academy helps students build industry-ready skills and

@@ -55,7 +55,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <title>Contact Us | Lone Star Academy Delhi</title>
+      <title>Contact Lone Star Academy | Enquire About Our Courses</title>
       <meta
         name="description"
         content="Contact Lone Star Academy for course enquiries, admissions, and career counseling. Call 9711709644 or visit our Delhi branches."
@@ -66,13 +66,13 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-900 to-blue-700 py-20 text-white">
         <div className="container mx-auto px-4 text-center">
-          <motion.h1
+          <motion.h2
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             className="mb-4 text-4xl font-bold md:text-5xl"
           >
             Get in <span className="text-orange-400">Touch</span>
-          </motion.h1>
+          </motion.h2>
           <p className="text-lg text-blue-100">
             We're here to help you start your career journey
           </p>

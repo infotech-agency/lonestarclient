@@ -18,7 +18,7 @@ const testimonials = [
 export default function TestimonialsPage() {
   return (
     <>
-      <title>Student Testimonials | Lone Star Academy Delhi</title>
+      <title>Student Testimonials | Lone Star Academy Success Stories</title>
       <meta name="description" content="Read success stories from our alumni. 1,00,000+ students trained with placement at Amazon, TCS, Wipro, Deloitte and more." />
       <Navigation />
 
