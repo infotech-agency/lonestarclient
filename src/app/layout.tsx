@@ -43,7 +43,7 @@
     return (
       <html lang="en">
         <head>
-          <link rel="icon" type="image/x-icon" href="/logo (3).png" />
+          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPX9SM97MJ"></script>
           <script
             dangerouslySetInnerHTML={{
