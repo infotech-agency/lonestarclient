@@ -109,7 +109,7 @@ import Link from "next/link";
       </div>
     </a>
 
-    <a href="mailto:info@lonestaracademy.in" className="flex items-center justify-start gap-4 group">
+    {/* <a href="mailto:info@lonestaracademy.in" className="flex items-center justify-start gap-4 group">
       <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-blue-500 transition group-hover:scale-110">
         <Mail size={18} />
       </div>
@@ -122,8 +122,23 @@ import Link from "next/link";
           info@lonestaracademy.in
         </a>
       </div>
-    </a>
+    </a> */}
+    <div className="flex items-center justify-start gap-4 group">
+  <div className="flex h-11 w-11 ...">
+    <Mail size={18} />
+  </div>
 
+  <div>
+    <p className="text-sm font-semibold text-white">Email</p>
+
+    <a
+      href="mailto:info@lonestaracademy.in"
+      className="text-sm text-gray-400 hover:text-blue-400"
+    >
+      info@lonestaracademy.in
+    </a>
+  </div>
+</div>
     <div className="flex items-start justify-start gap-4">
       <div className="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-red-500">
         <MapPin size={18} />

@@ -161,7 +161,8 @@ export default function BlogPage() {
                       {blog.excerpt}
                     </p>
                     <Link
-                      href={`${process.env.NEXT_PUBLIC_SITE_URL}/blog/${blog.slug}`}
+                    // ${process.env.NEXT_PUBLIC_SITE_URL}
+                      href={`/blog/${blog.slug}`}
                       className="mt-4 inline-flex items-center gap-2 text-blue-600 font-medium hover:text-blue-700"
                     >
                       Read More
