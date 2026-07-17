@@ -206,6 +206,7 @@ async function getCourse(slug: string) {
     // next: { revalidate: 3600 }, // ISR — re-fetch every hour
     cache: 'no-store'
   });
+
   if (!res.ok) return null;
   return res.json();
 }
