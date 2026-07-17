@@ -43,7 +43,7 @@ export default function AdminLogin({ onLogin }: Props) {
   try {
     // Fixed credentials
     const fixedEmail = "admin@lonestar.in";
-    const fixedPassword = "Admin@123";
+    const fixedPassword = "lonestar@academy.in";
 
     // Check credentials
     if (email === fixedEmail && password === fixedPassword) {
