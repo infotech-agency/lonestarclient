@@ -823,6 +823,23 @@ useEffect(() => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const getShortTitle = (title) => {
+  let short = title.split("|")[0].trim();
+
+  short = short
+    .replace(/\s+in\s+.*$/i, "") // "in Delhi..." ke baad remove
+    .replace(/\bCourses?\b.*$/i, "") // "Course/Courses" ke baad remove
+    .replace(/\bTraining\b.*$/i, "") // "Training" ke baad remove
+    .trim();
+
+  // Agar title "Best Online" se start hota hai to remove kar do
+  short = short.replace(/^Best\s+Online\s+/i, "");
+  short = short.replace(/^Online\s+/i, "");
+  short = short.replace(/^Best\s+/i, "");
+
+  return short.trim();
+};
+
   // const menuItems = [
   //   {
   //     label: "Courses",
@@ -868,14 +885,60 @@ useEffect(() => {
   //   //       href:"/careers"
   //   //     }
   // ];
+//   const menuItems = [
+//   {
+//     label: "Courses",
+//     submenu: [
+//       ...courses?.map((course) => ({
+//         label: course.title,
+//         href: `/${course.slug}`,
+//       })),
+//       {
+//         label: "All Courses",
+//         href: "/courses",
+//       },
+//     ],
+//   },
+//   { label: "About Us", href: "/about" },
+//   { label: "Our Placement", href: "/our-placement" },
+//   { label: "Testimonials", href: "/testimonials" },
+//   { label: "Blog", href: "/blog" },
+//   { label: "Contact Us", href: "/contact" },
+// ];
+//   const getShortTitle = (title) => {
+//   let short = title.split("|")[0].trim();
+
+//   // "Course", "Courses", "Training", "Online", "Certification" se pehle ka part le lo
+//   short = short.split(
+//     /\s+(Courses?|Course|Training|Online|Certification|Classes?)\b/i
+//   )[0];
+
+//   return short.trim();
+// };
   const menuItems = [
+  // {
+  //   label: "Courses",
+  //   submenu: [
+  //     ...(courses?.map((course) => ({
+  //       label:
+  //         course.title.length > 35
+  //           ? course.title.slice(0, 30) + ""
+  //           : course.title,
+  //       href: `/${course.slug}`,
+  //     })) || []),
+  //     {
+  //       label: "All Courses",
+  //       href: "/courses",
+  //     },
+  //   ],
+  // },
   {
     label: "Courses",
     submenu: [
-      ...courses?.map((course) => ({
-        label: course.title,
+      ...(courses?.map((course) => ({
+        label: getShortTitle(course.title),
         href: `/${course.slug}`,
-      })),
+      })) || []),
       {
         label: "All Courses",
         href: "/courses",
@@ -888,7 +951,8 @@ useEffect(() => {
   { label: "Blog", href: "/blog" },
   { label: "Contact Us", href: "/contact" },
 ];
-  const toggleMobileDropdown = (label: string) => {
+
+const toggleMobileDropdown = (label: string) => {
     setMobileDropdown((prev) => (prev === label ? null : label));
   };
 

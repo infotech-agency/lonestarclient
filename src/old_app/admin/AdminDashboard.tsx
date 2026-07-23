@@ -2456,12 +2456,12 @@ export default function AdminDashboard({
                             </td>
                             <td className="px-5 py-4">
                               <div className="flex items-center gap-2">
-                                <button
+                                {/* <button
                                   onClick={() => openEditCourse(course)}
                                   className="rounded-xl border border-blue-100 bg-blue-50 p-2.5 text-blue-600"
                                 >
                                   <Edit2 size={15} />
-                                </button>
+                                </button> */}
                                 {/* <button
                                   onClick={() =>
                                     setDeleteState({
@@ -2587,12 +2587,12 @@ export default function AdminDashboard({
                             </td>
                             <td className="px-5 py-4">
                               <div className="flex items-center gap-2">
-                                <button
+                                {/* <button
                                   onClick={() => openEditBlog(blog)}
                                   className="rounded-xl border border-indigo-100 bg-indigo-50 p-2.5 text-indigo-600"
                                 >
                                   <Edit2 size={15} />
-                                </button>
+                                </button> */}
                                 {/* <button
                                   onClick={() =>
                                     setDeleteState({
