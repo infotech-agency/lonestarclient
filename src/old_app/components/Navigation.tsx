@@ -707,6 +707,8 @@ import {
 } from "lucide-react";
 import { useState, type ChangeEvent, type FormEvent, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import axios from "axios";
+import { BASE_URL } from "../../../utils/baseUrl";
 
 type FormData = {
   name: string;
@@ -722,14 +724,14 @@ type FormData = {
 
 const branches = ["New Delhi", "Noida", "Gurgaon"];
 
-const courses = [
-  "Business Analytics",
-  "Data Analytics",
-  "Data Science",
-  "Digital Marketing",
-  "Cloud Computing",
-  "Financial Modelling",
-];
+// const courses = [
+//   "Business Analytics",
+//   "Data Analytics",
+//   "Data Science",
+//   "Digital Marketing",
+//   "Cloud Computing",
+//   "Financial Modelling",
+// ];
 
 const initialFormData: FormData = {
   name: "",
@@ -753,6 +755,59 @@ export function Navigation() {
   const [formData, setFormData] = useState<FormData>(initialFormData);
   const [idProof, setIdProof] = useState<File | null>(null);
   const [photo, setPhoto] = useState<File | null>(null);
+  // const[courseTitle,setCourseTitle]=useState(null);
+  // const[courses,setCourses]=useState(null);
+  const [courses, setCourses] = useState<
+  { title: string; slug: string }[]
+>([]);
+  const[courseSlug,setCourseSlug]=useState(null);
+
+
+
+// const getAllCourses = async () => {
+//   try {
+//     const response = await axios.get(`${BASE_URL}/api/courses`);
+//     console.log("slugs",response.data.map(
+//       (course: { slug: string; name: string }) => ({
+//         slug: course.slug,
+//         title: course.name,
+//       })
+//     ));
+//      setCourseTitle(response.data[0].name);
+//     setCourseSlug(response.data[0].slug);
+//     return response.data.map(
+//       (course: { slug: string; name: string }) => ({
+//         slug: course.slug,
+//         title: course.name,
+//       })
+//     );
+//   } catch (err) {
+//     console.error("Error fetching courses:", err);
+//     return [];
+//   }
+// };
+const getCourses = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/api/courses`);
+    console.log("resposne",response.data.map((course: any) => ({
+        title: course.name,
+        slug: course.slug,
+      })))
+    setCourses(
+      response.data.map((course: any) => ({
+        title: course.name,
+        slug: course.slug,
+      }))
+    );
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+useEffect(() => {
+  getCourses();
+}, []);
+
 
   // Handle scroll effect
   useEffect(() => {
@@ -768,55 +823,71 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // const menuItems = [
+  //   {
+  //     label: "Courses",
+  //     submenu: [
+  //       {
+  //         label: "Business Analytics",
+  //         href: "/business-analytics-course-delhi",
+  //       },
+  //       {
+  //         label: "Data Analytics",
+  //         href: "/data-analytics-courses-online-delhi",
+  //       },
+  //       {
+  //         label: "Data Science",
+  //         href: "/data-science-course-online-with-placement-delhi",
+  //       },
+  //       {
+  //         label: "Digital Marketing",
+  //         href: "/best-online-digital-marketing-courses-delhi",
+  //       },
+  //       {
+  //         label: "Cloud Computing",
+  //         href: "/cloud-computing-online-courses-delhi",
+  //       },
+  //       {
+  //         label: "Financial Modelling",
+  //         href: "/financial-modelling-course-delhi",
+  //       },
+  //       {
+  //         label:"All Courses",
+  //         href:"/courses"
+  //       },
+        
+  //     ],
+  //   },
+  //   { label: "About Us", href: "/about" },
+  //   { label: "Our Placement", href: "/our-placement" },
+  //   { label: "Testimonials", href: "/testimonials" },
+  //   { label: "Blog", href: "/blog" },
+  //   { label: "Contact Us", href: "/contact" },
+  //   //  {
+  //   //       label:"Careers",
+  //   //       href:"/careers"
+  //   //     }
+  // ];
   const menuItems = [
-    {
-      label: "Courses",
-      submenu: [
-        {
-          label: "Business Analytics",
-          href: "/business-analytics-course-delhi",
-        },
-        {
-          label: "Data Analytics",
-          href: "/data-analytics-courses-online-delhi",
-        },
-        {
-          label: "Data Science",
-          href: "/data-science-course-online-with-placement-delhi",
-        },
-        {
-          label: "Digital Marketing",
-          href: "/best-online-digital-marketing-courses-delhi",
-        },
-        {
-          label: "Cloud Computing",
-          href: "/cloud-computing-online-courses-delhi",
-        },
-        {
-          label: "Financial Modelling",
-          href: "/financial-modelling-course-delhi",
-        },
-        {
-          label:"All Courses",
-          href:"/courses"
-        },
-        // {
-        //   label:"Careers",
-        //   href:"/careers"
-        // }
-      ],
-    },
-    { label: "About Us", href: "/about" },
-    { label: "Our Placement", href: "/our-placement" },
-    { label: "Testimonials", href: "/testimonials" },
-    { label: "Blog", href: "/blog" },
-    { label: "Contact Us", href: "/contact" },
-    //  {
-    //       label:"Careers",
-    //       href:"/careers"
-    //     }
-  ];
-
+  {
+    label: "Courses",
+    submenu: [
+      ...courses?.map((course) => ({
+        label: course.title,
+        href: `/${course.slug}`,
+      })),
+      {
+        label: "All Courses",
+        href: "/courses",
+      },
+    ],
+  },
+  { label: "About Us", href: "/about" },
+  { label: "Our Placement", href: "/our-placement" },
+  { label: "Testimonials", href: "/testimonials" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact Us", href: "/contact" },
+];
   const toggleMobileDropdown = (label: string) => {
     setMobileDropdown((prev) => (prev === label ? null : label));
   };
@@ -1019,7 +1090,7 @@ export function Navigation() {
               </Link>
 
               <div className="hidden items-center gap-6 lg:flex xl:gap-8">
-                {menuItems.map((item) => (
+                {menuItems?.map((item) => (
                   <div
                     key={item.label}
                     className="relative"
