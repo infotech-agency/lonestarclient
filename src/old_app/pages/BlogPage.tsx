@@ -109,8 +109,9 @@ interface Blog {
 
 export default function BlogPage() {
   const [blogs, setBlogs] = useState<Blog[]>([]);
+  console.log("blogs", blogs)
   const [loading, setLoading] = useState(true);
-
+  // console.log(BASE_URL)
   useEffect(() => {
     fetch(`${BASE_URL}/api/blogs`)
       .then((res) => res.json())

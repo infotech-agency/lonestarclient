@@ -1377,6 +1377,7 @@ export default function AdminDashboard({
 }) {
   const [courses, setCourses] = useState<Course[]>([]);
   const [blogs, setBlogs] = useState<Blog[]>([]);
+  console.log("blogs", blogs);
   const [placements, setPlacements] = useState<Placement[]>([]);
   const [tiles, setTiles] = useState<Tile[]>([]);
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
