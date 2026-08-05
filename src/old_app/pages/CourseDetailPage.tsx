@@ -68,7 +68,7 @@ type CourseExtraContent = {
 
 const courseContent: Record<string, CourseExtraContent> = {
   "Business Analytics": {
-    aboutTitle: ": Business Analytics Online Course & Training in Delhi ",
+    aboutTitle: ": Business Analytics Online Course & Training in Delhi | Lone Star",
     about: "In this era of big data, choosing the right business analytics online course or business analyst course in Delhi can be a game changer for your career. At Lone Star Academy, we provide a practical, industry-relevant learning path for beginners, working professionals, and fresh graduates who want to build a strong career in analytics and decision making.",
     sections: [
       {
