@@ -176,7 +176,7 @@ import Link from "next/link";
         bgColor: "bg-black", // X black
       },
       {
-        href: "https://www.linkedin.com/company/lonestaracademy-in/?viewAsMember=true",
+        href: "https://www.linkedin.com/company/lonestaracademy/home",
         Icon: Linkedin,
         bgColor: "bg-[#0A66C2]", // LinkedIn blue
       },

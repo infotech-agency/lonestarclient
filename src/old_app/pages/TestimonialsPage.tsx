@@ -13,6 +13,15 @@ const testimonials = [
   { name: "Ankita Singh", course: "Data Science", company: "Wipro", rating: 5, text: "The machine learning project experience helped me crack interviews at 3 top companies. I chose Wipro and I'm loving every day of my new career.", avatar: "AS" },
   { name: "Mohit Verma", course: "Digital Marketing", company: "Publicis", rating: 5, text: "From a fresher to a Digital Marketing Executive in 2 months. The Google certification training and agency internship were game changers.", avatar: "MV" },
   { name: "Ritika Jain", course: "Business Analytics", company: "EY", rating: 5, text: "Amazing trainers and curriculum. Lone Star Academy's placement team worked tirelessly to get me interviews. Now working at EY as a Business Analyst.", avatar: "RJ" },
+
+    // New Testimonials
+  { name: "Karan Malhotra", course: "Cloud Computing", company: "Accenture", rating: 5, text: "The Cloud Computing program gave me strong hands-on experience with AWS, Docker and real deployment projects. The mock interviews helped me confidently prepare for my first cloud role.", avatar: "KM" },
+
+  { name: "Neha Kapoor", course: "Data Analytics", company: "HCLTech", rating: 5, text: "The practical approach made learning SQL, Excel and Power BI much easier. Working on real-world dashboards helped me build a strong portfolio for data analyst interviews.", avatar: "NK" },
+
+  { name: "Arjun Bansal", course: "Data Science", company: "Capgemini", rating: 5, text: "The Data Science course covered Python, machine learning and projects in a very structured way. The mentors were always available to clear doubts and guide me during interview preparation.", avatar: "AB" },
+
+  { name: "Simran Kaur", course: "Digital Marketing", company: "Dentsu", rating: 5, text: "I learned SEO, Google Ads, social media marketing and analytics through practical assignments. The agency-style projects gave me the confidence to start my career in digital marketing.", avatar: "SK" },
 ];
 
 export default function TestimonialsPage() {

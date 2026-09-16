@@ -760,7 +760,7 @@ useEffect(() => {
 
                <a
   href="tel:9711709644"
-  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20  px-6 py-3 font-semibold text-orange-500 transition bg-white hover:text-slate-900"
 >
   <Phone size={18} />
   Call Now
