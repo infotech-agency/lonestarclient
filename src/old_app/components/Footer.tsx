@@ -124,7 +124,7 @@ import Link from "next/link";
       </div>
     </a> */}
     <div className="flex items-center justify-start gap-4 group">
-  <div className="flex h-11 w-11 ...">
+  <div className="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-blue-500">
     <Mail size={18} />
   </div>
 
@@ -171,7 +171,7 @@ import Link from "next/link";
         bgColor: "bg-[#E4405F]", // Instagram pink/red
       },
       {
-        href: "https://x.com/i/flow/login?redirect_after_login=%2Flone_academy",
+        href: "https://x.com/AcademyLon37830",
         Icon: X,
         bgColor: "bg-black", // X black
       },

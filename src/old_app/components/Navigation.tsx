@@ -1114,7 +1114,7 @@ const toggleMobileDropdown = (label: string) => {
                   label: "LinkedIn",
                 },
                 {
-                  href: "https://www.linkedin.com/company/lonestaracademy-in/?viewAsMember=true",
+                  href: "https://x.com/AcademyLon37830",
                   Icon: X,
                   label: "X",
                 },

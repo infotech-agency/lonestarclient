@@ -758,14 +758,26 @@ useEffect(() => {
                   </div>
                 </div>
 
-                <a
-                  href="tel:9711709644"
-                  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-900"
-                >
-                  <Phone size={18} />
-                  Call Now
-                </a>
+               <a
+  href="tel:9711709644"
+  className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/20 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+>
+  <Phone size={18} />
+  Call Now
+</a>
+
+<a
+  href="https://wa.me/919711709644"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="ml-3 inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-6 py-3 font-semibold text-white shadow-lg shadow-[#25D366]/20 transition hover:bg-[#20BD5A] hover:-translate-y-0.5"
+>
+  <MessageCircle size={18} />
+  WhatsApp Now
+</a>
               </motion.div>
+
+              
 
               <motion.div
                 initial={{ opacity: 0, scale: 0.94 }}
