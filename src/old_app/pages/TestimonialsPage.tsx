@@ -22,6 +22,44 @@ const testimonials = [
   { name: "Arjun Bansal", course: "Data Science", company: "Capgemini", rating: 5, text: "The Data Science course covered Python, machine learning and projects in a very structured way. The mentors were always available to clear doubts and guide me during interview preparation.", avatar: "AB" },
 
   { name: "Simran Kaur", course: "Digital Marketing", company: "Dentsu", rating: 5, text: "I learned SEO, Google Ads, social media marketing and analytics through practical assignments. The agency-style projects gave me the confidence to start my career in digital marketing.", avatar: "SK" },
+
+  // More Testimonials
+{
+  name: "Rahul Sharma",
+  course: "Full Stack Development",
+  company: "TCS",
+  rating: 5,
+  text: "The Full Stack Development program helped me master React, Node.js and MongoDB through hands-on projects. The structured curriculum and mentor guidance helped me prepare for real-world development challenges.",
+  avatar: "RS"
+},
+
+{
+  name: "Priya Verma",
+  course: "Python Programming",
+  company: "Infosys",
+  rating: 5,
+  text: "The practical Python sessions made complex concepts easy to understand. Working on real projects and receiving personalized feedback helped me improve my coding skills and build confidence for technical interviews.",
+  avatar: "PV"
+},
+
+{
+  name: "Rohit Mehta",
+  course: "Cyber Security",
+  company: "Wipro",
+  rating: 5,
+  text: "The cybersecurity training provided hands-on exposure to network security, ethical hacking and vulnerability assessment. The practical labs and expert mentorship helped me understand industry practices and prepare for my career.",
+  avatar: "RM"
+},
+
+{
+  name: "Ananya Singh",
+  course: "UI/UX Design",
+  company: "Accenture",
+  rating: 5,
+  text: "The UI/UX course helped me understand user research, wireframing and prototyping using Figma. Working on real design projects helped me create a professional portfolio and approach design challenges with confidence.",
+  avatar: "AS"
+},
+
 ];
 
 export default function TestimonialsPage() {
