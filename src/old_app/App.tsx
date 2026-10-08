@@ -37,6 +37,7 @@ import Testimonials from "./components/VideoTestimonials";
 import BlogPage from './pages/BlogPage';
 import BlogSection from './pages/BlogSection';
 import TestimonialsSlider from './components/TestimonialSlider';
+import FullWidthMap from './components/FullWidthMap';
 
 function CourseDetails() {
   const { slug } = useParams();
@@ -431,6 +432,7 @@ export default function App() {
         <Faq />
         <LoneStarBanner />
         <BlogSection/>
+        <FullWidthMap/>
         <Footer />
         <FloatingButtons />
 
