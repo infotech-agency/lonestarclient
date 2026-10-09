@@ -4755,6 +4755,8 @@ type CourseExtraContent = {
   careerOptions: string[];
 };
 
+
+
 const courseContent: Record<string, CourseExtraContent> = {
   "Business Analytics": {
     aboutTitle: ": Business Analytics Online Course & Training in Delhi | Lone Star",
@@ -4822,7 +4824,9 @@ const courseContent: Record<string, CourseExtraContent> = {
     sections: [
       {
         title: "Why Choose Our Data Analytics Training in Delhi?",
-        content: "The training helps learners build skills in data cleaning, exploratory analysis, reporting, dashboard creation, trend analysis, and communicating findings effectively. These skills apply across IT, finance, retail, e-commerce, healthcare, marketing, consulting, and operations.",
+        content: `
+        An analytics program worth doing will teach you more than individual software tools. Lone Star Academy helps you link Excel, SQL, Python, statistics, data visualizations, and business intelligence in a workflow that you can use to do real-world analysis.\n\nThe training helps learners build skills in data cleaning, exploratory analysis, reporting, dashboard creation, trend analysis, and communicating findings effectively. These skills apply across IT, finance, retail, e-commerce, healthcare, marketing, consulting, and operations.\n\n The program also caters to learners who like structured data analytics classes with guided instruction and hands-on practice.
+`,
         points: [
           "Curriculum linking Excel, SQL, Python, statistics, and BI tools",
           "Hands-on projects and business case studies",
@@ -4833,7 +4837,12 @@ const courseContent: Record<string, CourseExtraContent> = {
       },
       {
         title: "What Will You Learn?",
-        content: "Our Data Analytics course covers the complete analytical workflow: Collect data → Clean data → Explore data → Identify patterns → Create visualizations → Interpret insights → Recommend solutions.",
+        content: `The analytical workflow is typically as follows:
+
+Collect data → Clean data → Explore data → Identify patterns → Create visualizations → Interpret insights → Recommend solutions
+
+This helps learners to know how to use a tool, but also why a tool is relevant for a specific type of analysis. 
+`,
         points: [
           "Excel for Data Analysis: formulas, lookup functions, PivotTables, charts, conditional formatting, and dashboards",
           "SQL for Data Analytics: filtering, sorting, aggregation, joins, subqueries, CTEs, and analytical queries",
@@ -4845,25 +4854,30 @@ const courseContent: Record<string, CourseExtraContent> = {
       },
       {
         title: "Data Analytics Certification in Delhi",
-        content: "A certificate validates course completion and shows that you have followed a structured program. However, employers usually look for more than a certificate: real-life projects, analytical thinking, SQL knowledge, dashboards, and the ability to explain business insights. That is why our program combines certification with hands-on experience and practical skills. Please confirm the exact certification details with the academy before enrollment.",
+        content: `A certificate can serve to validate course completion and show that you have completed a formalized study. But employers typically look for something more than a certificate. Real life projects, thinking analytically, knowing SQL, dashboards, communication and ability to explain business insights are some of the critical components of a good candidate.
+So, must-have features of a good data analytics institution would include the ability to fuse certification with hands-on-experience and tangible skills. 
+`,
       },
       {
-        title: "Placement and Career Support",
-        content: "Placement support is different from an employment guarantee. Our career support can include resume building, interview preparation, mock interviews, portfolio guidance, and help identifying relevant job opportunities. Your final role depends on your education, experience, technical skills, portfolio, and interview performance.",
+        title: "Data Analytics Course With Placement and Career Support",
+        content: `For learners considering a data analytics course with placement, it is crucial to differentiate between placement support and an employment guarantee. Career support services can include assistance with resume building, interview preparation, mock interviews, portfolio guidance, and help identifying relevant job opportunities.\n\nLone Star Academy can be assessed on these tangible criteria when selecting a data analyst course in Delhi with placement: quality of curriculum, project relevance, trainer experience, student support services, certification, and the type of career assistance provided. 
+`,
       },
       {
         title: "Why Learn Data Analytics in Delhi?",
-        content: "Delhi and the NCR region offer varied opportunities across technology, consulting, banking, finance, retail, healthcare, education, e-commerce, and professional services. Learning locally gives you easy access to instructor-led training, professional networking, and career-focused education. Students from nearby NCR areas can also apply based on their preferred mode of learning and batch timings.",
+        content: `The employment landscape in Delhi and the NCR region is varied across technology, consulting, banking, finance, retail, healthcare, education, e-commerce and professional services. Studying in the classroom locally also meant easy access to instructor-led data analytics training, professional networking, and career-focused education.
+Lone Star Academy caters to the students in Delhi and those from the adjoining NCR areas can also apply for this course on the basis of their preferred mode of learning and batch timings. 
+`,
       },
     ],
-    highlights: [
-      "Beginner to advanced data analytics training",
-      "Excel, SQL, Python, Power BI and Tableau",
-      "Hands-on projects and business case studies",
-      "Statistics for data analysis",
-      "Certification on course completion",
-      "Career support and interview preparation",
-    ],
+    // highlights: [
+    //   "Beginner to advanced data analytics training",
+    //   "Excel, SQL, Python, Power BI and Tableau",
+    //   "Hands-on projects and business case studies",
+    //   "Statistics for data analysis",
+    //   "Certification on course completion",
+    //   "Career support and interview preparation",
+    // ],
     tools: ["Microsoft Excel", "SQL", "Python", "Power BI", "Tableau"],
     whoCanJoin: [
       "Graduates and college students",
@@ -4883,6 +4897,16 @@ const courseContent: Record<string, CourseExtraContent> = {
       "Operations Analyst",
       "Financial Analyst",
     ],
+   
+journey: [
+  {
+    title: "Start Your Data Analytics Journey",
+    desc: `An important career decision is which data analytics institute in Delhi you will choose. Before you enroll, consider the curriculum, hands-on training, projects, learning support, certification, and career services.
+
+Lone Star Academy offers a guided learning environment to build modern analytics skills. Get in touch with the academy to enquire about their data analytics courses in Delhi, latest batches, curriculum, fees, and eligibility, and select a learning path that best fits your career aspirations.`
+  }
+]
+
   },
   "Data Science": {
     aboutTitle: "Data Science Course in Delhi with Practical Training & Placement Support",
@@ -4890,7 +4914,7 @@ const courseContent: Record<string, CourseExtraContent> = {
     sections: [
       {
         title: "Why Choose Our Data Science Course in Delhi?",
-        content: "Lone Star Academy believes in teaching that works. Students are exposed to live projects, case studies, assignments, industry tools, resume building, mock interviews and career assistance. The academy also offers both physical class sessions and online education options.",
+         content: `Data science is more than just knowing algorithms. Practitioners at all levels must work with data, write and read code, understand the output of code, solve business problems, and communicate findings.\n\nLone Star Academy believes in teaching that works. Students are exposed to live projects, case studies, assignments, industry tools, resume building, mock interviews and career assistance. The academy also offers both physical class sessions and online education options.`,
         points: [
           "Practical, industry-oriented training",
           "Experienced industry trainers",
@@ -4930,11 +4954,11 @@ const courseContent: Record<string, CourseExtraContent> = {
       },
       {
         title: "Data Science Offline Course in Delhi",
-        content: "For students who prefer face to face interaction with the trainers and classmates, the data science offline course in Delhi offers a classroom learning environment at Lone Star Academy's Janakpuri centre. Offline learning can be especially handy when you have instant doubts to be resolved, guided coding practice, classroom discussions and structured interaction with the trainers. Lone Star Academy also offers online learning options for students and professionals looking for more flexibility.",
+        content: "For students who prefer face to face interaction with the trainers and classmates, the data science offline course in Delhi offers a classroom learning environment at Lone Star Academy's Janakpuri centre.\n\n Offline learning can be especially handy when you have instant doubts to be resolved, guided coding practice, classroom discussions and structured interaction with the trainers. Lone Star Academy also offers online learning options for students and professionals looking for more flexibility.",
       },
       {
         title: "Projects and Practical Learning",
-        content: "Practice is the difference between learning data science in theory and being able to implement it in the real world. The training methodology at Lone Star Academy involves live projects, hands-on exercises, case studies and real-time implementation. These can be used by students to reinforce their data analysis and machine learning skills, as well as creating content that can be added to a professional portfolio.",
+        content: "Practice is the difference between learning data science in theory and being able to implement it in the real world.\n\n The training methodology at Lone Star Academy involves live projects, hands-on exercises, case studies and real-time implementation. These can be used by students to reinforce their data analysis and machine learning skills, as well as creating content that can be added to a professional portfolio.",
       },
       {
         title: "Data Science Course in Delhi with Placement Support",
@@ -4946,17 +4970,17 @@ const courseContent: Record<string, CourseExtraContent> = {
       },
       {
         title: "Why Choose Lone Star Academy?",
-        content: "Lone Star Academy was founded in 2013 and its training model is a blend of expert mentorship, industry-relevant curriculum, hands-on execution, and career assistance. According to the academy, it has trained 10,000+ students and has partnered with 100+ industry expert trainers for its programs. The process: take a free demo class, learn from the trainers, do hands-on projects, get your resume and interviews ready, get placed, and start your career.",
+        content: "Lone Star Academy was founded in 2013 and its training model is a blend of expert mentorship, industry-relevant curriculum, hands-on execution, and career assistance. According to the academy, it has trained 10,000+ students and has partnered with 100+ industry expert trainers for its programs.\n\nThe process is structured as follows: take a free demo class, learn from the trainers, do hands-on projects, get your resume and interviews ready, get placed, and start your career.",
       },
     ],
-    highlights: [
-      "Practical, industry-oriented training",
-      "Live projects and case studies",
-      "Offline and online learning options",
-      "Resume and LinkedIn profile support",
-      "Placement guidance and job referrals",
-      "Course completion certification",
-    ],
+    // highlights: [
+    //   "Practical, industry-oriented training",
+    //   "Live projects and case studies",
+    //   "Offline and online learning options",
+    //   "Resume and LinkedIn profile support",
+    //   "Placement guidance and job referrals",
+    //   "Course completion certification",
+    // ],
     tools: ["Python", "SQL", "Machine Learning", "Statistics", "Data Visualization"],
     whoCanJoin: [
       "College students and fresh graduates",
@@ -4974,6 +4998,14 @@ const courseContent: Record<string, CourseExtraContent> = {
       "Analytics Professional",
       "AI and machine learning roles",
     ],
+    journey: [
+  {
+    title: "Start Learning Data Science in Delhi",
+    desc: `A data scientist’s career is developed through regular practice, solid conceptual understanding, hands-on projects, and real-world application of technical knowledge. Lone Star Academy offers the perfect blend of classroom or online learning with hands-on experience and career readiness, to support you in taking that next step.
+Enroll for Data Science Course in Delhi at Lone Star Academy and begin your journey to a data driven career.
+`
+  }
+]
   },
   "Digital Marketing": {
     aboutTitle: "Best Online Digital Marketing Course & Digital Marketing Course in Delhi",
@@ -5179,6 +5211,7 @@ const courseSchemas: Record<string, object[]> = {
       name: "Data Analytics Course in Delhi with Practical Projects & Career Support",
       image: "https://res.cloudinary.com/df5l1kxpf/image/upload/v1784788643/lonestar_academy/ynkxwnhw7b5kfr0n3ysh.jpg",
       description: "Develop hands-on, job-ready analytics skills with Lone Star Academy data analytics courses in Delhi. The training is built around the skills businesses use to transform raw data into actionable insights, reports, dashboards, and better decisions. Whether you are a graduate, student, working professional, or looking to transition to a career, the program can assist you in building a structured knowledge of data analysis and business intelligence.",
+
       brand: {
         "@type": "Brand",
         name: "Lone Star Academy",
@@ -5293,7 +5326,15 @@ export default function CourseDetailPage({
   const [allCourses, setAllCourses] = useState<Course[] | null>(null);
   const course = courseData;
   const [loading, setLoading] = useState(false);
-
+  const shortName = course.name.split(" ").slice(0, 2).join(" ");
+  const joinTitleMap: Record<string, string> = {
+  "data science": "Data Scientist",
+  "data analytics": "Data Analyst",
+  "business analytics": "Business Analyst",
+  "digital marketing": "Digital Marketing",
+  "cloud computing": "Cloud Computing",
+};
+const joinTitle = joinTitleMap[shortName.toLowerCase()] || shortName;
   const getAllCourses = async () => {
     try {
       setLoading(true);
@@ -5674,7 +5715,7 @@ export default function CourseDetailPage({
                         course.description ? "mt-4" : ""
                       }`}
                     >
-                      {content.about}
+                      {/* {content.about} */}
                     </p>
                   )}
                 </div>
@@ -5693,7 +5734,7 @@ export default function CourseDetailPage({
                       {section.title}
                     </h2>
 
-                    <p className="leading-8 text-slate-600">
+                    <p className="leading-8 whitespace-pre-line text-slate-600">
                       {section.content}
                     </p>
 
@@ -5811,7 +5852,7 @@ export default function CourseDetailPage({
                 {/* TOOLS & CAREER */}
                 {(tools.length > 0 || careerOptions.length > 0) && (
                   <div className="grid gap-6 md:grid-cols-2">
-                    {tools.length > 0 && (
+                    {/* {tools.length > 0 && (
                       <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
                         <h2 className="mb-5 text-2xl font-bold text-slate-900">
                           Tools You Will Learn
@@ -5828,7 +5869,7 @@ export default function CourseDetailPage({
                           ))}
                         </div>
                       </div>
-                    )}
+                    )} */}
 
                     {careerOptions.length > 0 && (
                       <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
@@ -5861,7 +5902,7 @@ export default function CourseDetailPage({
                 {whoCanJoin.length > 0 && (
                   <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
                     <h2 className="mb-6 text-2xl font-bold text-slate-900">
-                      Who Can Join This Course?
+                      Who Can Join This {joinTitle} Course in Delhi?
                     </h2>
 
                     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -5885,7 +5926,7 @@ export default function CourseDetailPage({
                 )}
 
                 {/* WHY CHOOSE */}
-                <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+                {/* <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
                   <h2 className="mb-6 text-2xl font-bold text-slate-900">
                     Why Choose Lone Star Academy
                   </h2>
@@ -5915,7 +5956,7 @@ export default function CourseDetailPage({
                       );
                     })}
                   </div>
-                </div>
+                </div> */}
 
                 {/* FAQs (sirf DB se, DB mein na ho to section hide) */}
                 {courseFaqs.length > 0 && (
@@ -5962,9 +6003,10 @@ export default function CourseDetailPage({
                 )}
 
                 {/* CTA */}
-                <div className="overflow-hidden rounded-[32px] bg-gradient-to-r from-blue-700 via-indigo-700 to-cyan-600 p-8 text-white shadow-xl">
+                {/* <div className="overflow-hidden rounded-[32px] bg-gradient-to-r from-blue-700 via-indigo-700 to-cyan-600 p-8 text-white shadow-xl">
                   <h2 className="text-2xl font-bold md:text-3xl">
                     Start Your Learning Journey Today
+                    
                   </h2>
                   <p className="mt-3 max-w-2xl text-slate-100">
                     Join {course.name} at Lone Star Academy and learn with expert
@@ -5980,7 +6022,66 @@ export default function CourseDetailPage({
                       Talk to Counselor
                     </a>
                   </div>
-                </div>
+                </div> */}
+                {/* CTA / JOURNEY */}
+{content?.journey && content.journey.length > 0 ? (
+  content.journey.map((j, index) => (
+    <motion.div
+      key={j.title}
+      initial={{ opacity: 0, y: 18 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.05 }}
+      className="overflow-hidden rounded-[32px] bg-gradient-to-r from-blue-700 via-indigo-700 to-cyan-600 p-8 text-white shadow-xl"
+    >
+      <h2 className="text-2xl font-bold md:text-3xl">{j.title}</h2>
+
+      <p className="mt-3 max-w-3xl whitespace-pre-line leading-8 text-slate-100">
+        {j.desc}
+      </p>
+
+      <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+        <a
+          href="tel:9711709644"
+          className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+        >
+          <Phone size={18} />
+          Talk to Counselor
+        </a>
+
+        <a
+          href="https://wa.me/919711709644"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-2xl bg-[#25D366] px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-[#20BD5A]"
+        >
+          <MessageCircle size={18} />
+          WhatsApp Now
+        </a>
+      </div>
+    </motion.div>
+  ))
+) : (
+  <div className="overflow-hidden rounded-[32px] bg-gradient-to-r from-blue-700 via-indigo-700 to-cyan-600 p-8 text-white shadow-xl">
+    <h2 className="text-2xl font-bold md:text-3xl">
+      Start Your Learning Journey Today
+    </h2>
+    <p className="mt-3 max-w-2xl text-slate-100">
+      Join {course.name} at Lone Star Academy and learn with expert
+      support, live classes, and practical projects.
+    </p>
+
+    <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+      <a
+        href="tel:9711709644"
+        className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-900"
+      >
+        <Phone size={18} />
+        Talk to Counselor
+      </a>
+    </div>
+  </div>
+)}
               </div>
 
               {/* DESKTOP ENQUIRY FORM */}
