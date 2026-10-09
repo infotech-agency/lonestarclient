@@ -5326,7 +5326,8 @@ export default function CourseDetailPage({
   const [allCourses, setAllCourses] = useState<Course[] | null>(null);
   const course = courseData;
   const [loading, setLoading] = useState(false);
-  const shortName = course.name.split(" ").slice(0, 2).join(" ");
+  // const shortName = course.name.split(" ").slice(0, 2).join(" ");
+  const shortName = (course?.name ?? "").split(" ").slice(0, 2).join(" ");
   const joinTitleMap: Record<string, string> = {
   "data science": "Data Scientist",
   "data analytics": "Data Analyst",
