@@ -4758,64 +4758,116 @@ type CourseExtraContent = {
 
 
 const courseContent: Record<string, CourseExtraContent> = {
-  "Business Analytics": {
+ "Business Analytics": {
     aboutTitle: ": Business Analytics Online Course & Training in Delhi | Lone Star",
-    about: "In this era of big data, choosing the right business analytics online course or business analyst course in Delhi can be a game changer for your career. At Lone Star Academy, we provide a practical, industry-relevant learning path for beginners, working professionals, and fresh graduates who want to build a strong career in analytics and decision making.",
+    about: "Opportunities in technology, consulting, finance, retail, and business services are available throughout Delhi NCR. For those with solid analytical, communication and problem-solving skills, there are opportunities to work on projects that deliver process improvements, digital transformation and support business decision making.",
     sections: [
       {
-        title: "Why Choose Lone Star Academy for Business Analytics?",
-        content: "At Lone Star Academy, we focus on making students job-ready through practical training, live projects, real industry case studies, and placement-oriented preparation.",
+        title: "Why Choose Business Analyst Training in Delhi?",
+        content: "Opportunities in technology, consulting, finance, retail, and business services are available throughout Delhi NCR. For those with solid analytical, communication and problem-solving skills, there are opportunities to work on projects that deliver process improvements, digital transformation and support business decision making.\n\nAn organized business analyst training program guides learners through identifying business problems, documenting requirements, and assessing solutions. Rather than just teaching the theory, quality training should relate theory to practical business scenarios.\n\nProspective learners at Lone Star Academy can inquire about the curriculum, training style, batch timings, and career assistance before enrolling. Knowing these details will help you in picking a program that best fits your present skills and career goals.",
+      },
+      {
+        title: "What Skills Does a Business Analyst Need?",
+        content: "Business analyst is required to have a blend of business acumen, technical knowledge and soft skills like:\n\nThese skills enable a business analyst to translate an organization’s goals into actionable outcomes.",
         points: [
-          "Industry-relevant content designed by subject experts",
-          "Live projects and real industry case studies",
-          "Placement-oriented training with interview preparation",
-          "Flexible online and offline classroom learning",
-          "Mentorship from working professionals",
+          "Requirement gathering: Understanding stakeholder needs and translating them into clear requirements.",
+          "Business documentation: Preparing Business Requirements Documents (BRDs), Functional Requirements Documents (FRDs), and user stories.",
+          "Data analysis: Using Excel and SQL to organize, examine, and interpret business information.",
+          "Process modelling: Mapping workflows and identifying opportunities for improvement.",
+          "Agile methodology: Understanding sprints, backlogs, stakeholder feedback, and collaboration with development teams.",
+          "Communication: Explaining business requirements clearly to technical and non-technical stakeholders.",
         ],
       },
       {
-        title: "What You Will Learn",
-        content: "This Business Analytics course gives you strong knowledge of basic and advanced analytics concepts with real business applications.",
+        title: "Business Analyst Course Curriculum",
+        content: "A good business analyst course in Delhi will cover the basics of business analysis, documentation, analytical tools and how to apply them. The following topics provide a good framework for evaluating a course curriculum.\n\nContact Lone Star Academy to verify the updated syllabus, software tools, project work, and learning outcomes of the course.",
         points: [
-          "Introduction to Business Analytics",
-          "Data Visualization with Excel, Power BI and Tableau",
-          "SQL for Data Analysis",
-          "Python for Data Analytics",
-          "Statistical Analysis and Predictive Modeling",
-          "Business Intelligence and Reporting",
+          "1. Business Analysis Fundamentals: Learn about the business analyst role, software development life cycle (SDLC), business process improvement, stakeholder management, and how business goals relate to project outcomes.",
+          "2. Requirement Gathering and Documentation: Master requirement elicitation techniques, stakeholder interviews, workshops, requirement validation, BRDs, FRDs, use cases, and user stories. These techniques help convert business requirements into project requirements that can be implemented.",
+          "3. Business Analysis with Excel and SQL: Learn about spreadsheet-based analysis, data cleaning, formulas, pivot tables, and reporting. Basic SQL skills can help you to get and analyze data from relational databases for business decisions.",
+          "4. Agile, Jira, and Process Modelling: Learn about Agile and Scrum practices, product backlogs, sprint planning, and project collaboration. Relevant curriculum may also include Jira, Confluence, UML diagrams, flowcharts, and Business Process Model and Notation (BPMN), depending on the curriculum.",
+          "5. Practical Projects and Case Studies: Practical exercises can illustrate how analysts record requirements, align current workflows, identify business problems, and propose solutions. The project-based learning approach also enables learners to justify their analytical choices in interviews.",
         ],
       },
       {
-        title: "Practice-Based Learning Model",
-        content: "Our course focuses on practical learning instead of only theory. You will work on real datasets, case studies, live assignments, and a capstone project to build your portfolio.",
+        title: "Who Can Enrol in a Business Analyst Course?",
+        content: "The business analyst course in Delhi may be a good choice of study for a number of categories of learners based on their educational qualifications and professional aspirations.\n\nYou don’t have to have super advanced programming skills to start learning business analysis. But a solid grasp of Excel, some basic data concepts, good communication skills, and a degree of structured problem-solving will help.",
+        points: [
+          "Freshers and graduates: Gain basic understanding of business analysis and the demands of the workplace.",
+          "Working professionals: Enhance analytical and documentation skills for higher level of responsibility.",
+          "IT professionals: Acquire the skill of converting the requirements of clients to functional specifications.",
+          "Non-IT professionals: Consider moving from operations, finance, sales or customer service into business analysis.",
+        ],
       },
       {
-        title: "Job Support and Career Assistance",
-        content: "Our Business Analyst training in Delhi includes resume building, mock interviews, soft skills training, job referrals, and placement assistance.",
+        title: "Business Analyst Course Fees, Duration, and Placement Support",
+        content: "Lone Star Academy's Business Analyst Course provides hands-on business analysis skills to learners through a structured 4-month training program. The program, with a course fee of ₹25,000, provides a tailored learning route for freshers and working professionals looking to enhance their understanding of business analysis, requirements gathering, data analysis, and business process improvement.\n\nLone Star Academy, with 500+ students and a 4.9-star rating, strives to create a conducive learning environment for aspiring professionals. Learners can ask for the full curriculum, batch timings, training mode, practical assignments, and any extra charges before signing up.\n\nFor those looking for a business analyst course in Delhi with placement support, it is important to check the career services provided, such as resume building, mock interviews, career counseling, and job placement assistance. Placement support can help learners get ready for the recruitment process.\n\nBefore enrolling, also check the certificate details, course examinations and the specific learning outcomes covered in the program. This helps you to make a well-informed choice about your investment in business analyst training in Delhi.",
       },
-    ],
-    highlights: [
-      "Practical business analytics training",
-      "Live projects and case studies",
-      "Excel, Power BI, Tableau, SQL and Python",
-      "Online and offline flexible batches",
-      "Interview preparation",
-      "Placement assistance",
+      {
+        title: "Career Opportunities After Business Analyst Training",
+        content: "Business Analysis skills are applicable to many areas of business. Based on your experience, technical knowledge and professional background, a few career options are:\n\nA business analyst commonly works with stakeholders, project managers, developers, quality assurance groups, and product owners. Responsibilities could include capturing requirements, analysing processes, assisting with software implementations, and determining if a solution satisfies business requirements.\n\nCareer progression is based on individual performance, relevant experience, communication skills and take on more learning.",
+        points: [
+          "Business Analyst",
+          "Junior Business Analyst",
+          "Business Process Analyst",
+          "Requirements Analyst",
+          "Business Operations Analyst",
+          "Functional Analyst",
+        ],
+      },
+      {
+        title: "Business Analyst Course in Delhi vs. Other Analytics Courses",
+        content: "The best course for you depends on the kind of work you want to do.\n\nBusiness analyst training is centered on understanding business needs, working with stakeholders, improving processes, and turning requirements into practical solutions. Data analytics courses in Delhi, by contrast, focus more on preparing and examining data, creating visualizations, applying statistical methods, and presenting findings. Data science courses usually go further into areas such as predictive modeling and machine learning.\n\nIf you’re more interested in SEO, online advertising, content planning, and measuring campaign results, a digital marketing course in Delhi may be a better fit.\n\nTo compare business analytics programs across India, look beyond the course name. Consider what’s taught, the instructors’ experience, opportunities for hands-on practice, the tools included, student feedback, and the career support available.",
+      },
     ],
     tools: ["Advanced Excel", "Power BI", "Tableau", "SQL", "Python"],
     whoCanJoin: [
-      "Fresh graduates",
-      "Working professionals",
-      "Business owners",
-      "IT professionals",
-      "Beginners with no coding background",
+      "Freshers and graduates: Gain basic understanding of business analysis and the demands of the workplace.",
+      "Working professionals: Enhance analytical and documentation skills for higher level of responsibility.",
+      "IT professionals: Acquire the skill of converting the requirements of clients to functional specifications.",
+      "Non-IT professionals: Consider moving from operations, finance, sales or customer service into business analysis.",
     ],
-    careerOptions: [
-      "Business Analyst",
-      "Data Analyst",
-      "Reporting Analyst",
-      "BI Developer",
-      "Product Analyst",
+    // careerOptions: [
+    //   "Business Analyst",
+    //   "Junior Business Analyst",
+    //   "Business Process Analyst",
+    //   "Requirements Analyst",
+    //   "Business Operations Analyst",
+    //   "Functional Analyst",
+    // ],
+    journey: [
+      {
+        title: "Take the Next Step with Lone Star Academy",
+        desc: `Lone Star Academy is one option for Delhi students exploring business analysis courses. Learners in Noida, Gurugram, Ghaziabad, and Faridabad may also find the program worth considering, depending on how classes are delivered and how easy it is to attend.
+
+Growing your business analysis skill set begins with selecting education that aligns with your career aspirations. Check our business analyst course delhi at Lone Star Academy for detailed curriculum, practicals, fees and batch information.
+Visit Lone Star Academy to enquire about the program and determine whether it aligns with your professional development plans.
+`,
+      },
+    ],
+    faqs: [
+     
+      {
+        q: "Is this the best business analyst course in Delhi?",
+        a: "Yes, Lone Star Academy provides most practical and industry led business analyst course in delhi.",
+      },
+      {
+        q: "Do I need any coding experience to participate?",
+        a: "No, our business analyst course in Delhi begins from fundamentals and progressively introduces you to technical aspects.",
+      },
+      {
+        q: "What are the jobs after this course?",
+        a: "You can work as a Business Analyst, Data Analyst, BI Professional, etc. after finishing this Business Analyst training in Delhi.",
+      },
+      {
+        q: "How is it different from data science courses?",
+        a: "Data science course online with placement is more focused on advanced algorithms whereas business analytics deals with business decisions and real world insights.",
+      },
+      {
+        q: "Is this course for beginners?",
+        a: "Absolutely. This is one of the best business analytics courses for working professionals as well as freshers.",
+      },
+     
     ],
   },
   "Data Analytics": {
@@ -5900,7 +5952,7 @@ const joinTitle = joinTitleMap[shortName.toLowerCase()] || shortName;
                 )}
 
                 {/* WHO CAN JOIN */}
-                {whoCanJoin.length > 0 && (
+                {whoCanJoin.length > 0 && contentKey !== "Business Analytics" &&  (
                   <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
                     <h2 className="mb-6 text-2xl font-bold text-slate-900">
                       Who Can Join This {joinTitle} Course in Delhi?
