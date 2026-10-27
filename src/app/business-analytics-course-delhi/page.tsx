@@ -260,12 +260,32 @@ export default function BusinessAnalyticsPage() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Your enquiry has been submitted successfully.");
-    setFormData({ name: "", phone: "" });
-    setShowMobileForm(false);
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   alert("Your enquiry has been submitted successfully.");
+  //   setFormData({ name: "", phone: "" });
+  //   setShowMobileForm(false);
+  // };
+
+  const WHATSAPP_NUMBER = "919711709644";
+
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const text =
+    `*New Course Enquiry*\n\n` +
+    `*Name:* ${formData.name}\n` +
+    `*Phone:* ${formData.phone}\n` +
+    `*Course:* ${course.name}\n` +
+    `*Page:* ${window.location.href}`;
+
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+
+  window.open(url, "_blank", "noopener,noreferrer");
+
+  setFormData({ name: "", phone: "" });
+  setShowMobileForm(false);
+};
 
   const otherCourses = (allCourses || []).filter((c) => {
     const s = c.slug || c.name.toLowerCase().replace(/\s+/g, "-");
