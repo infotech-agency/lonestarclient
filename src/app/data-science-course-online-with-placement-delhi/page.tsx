@@ -23,6 +23,7 @@ import { PlacedStudents } from "../../old_app/components/PlacedStudents";
 import TestimonialsSlider from "../../old_app/components/TestimonialSlider";
 import CertificateSection from "../../old_app/components/ui/CertificateSection";
 import FemaleMentorProfile from "../../old_app/components/FemaleMentorProfile";
+import Link from "next/link";
 
 interface Course {
   _id: string;
@@ -378,7 +379,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur-md">
                     <div className="flex items-center gap-2">
                       <IndianRupee size={18} className=" text-yellow-400" />
-                      <span className="text-sm">4500</span>
+                      <span className="text-sm">45000</span>
                     </div>
                   </div>
 
@@ -676,20 +677,24 @@ const handleSubmit = (e: React.FormEvent) => {
                   </p>
 
                   <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-                    <button
+                    <Link
                       type="button"
-                      onClick={openEnquiry}
+                      // onClick={openEnquiry}
+                      href='/admission-form'
                       className="inline-flex items-center justify-center gap-2 rounded-2xl bg-orange-600 px-6 py-3 font-semibold text-white shadow-lg transition hover:bg-orange-700"
                     >
                       Book a Free Demo Class
-                    </button>
-                    <button
+                    </Link>
+                      
+                    
+                    <Link
                       type="button"
-                      onClick={openEnquiry}
+                      // onClick={openEnquiry}
+                      href="/contact"
                       className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-900"
                     >
                       Enquire Now
-                    </button>
+                    </Link>
                     <a
                       href="tel:9711709644"
                       className="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/30 bg-white/10 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-slate-900"

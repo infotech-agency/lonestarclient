@@ -53,9 +53,9 @@ const FemaleMentorProfile = () => {
 
             {/* Name & Designation */}
             <div className="flex flex-wrap items-baseline gap-2">
-              <h1 className="text-3xl md:text-4xl font-extrabold text-[#1A3B8B]">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-[#1A3B8B]">
                 Prabha Sharma
-              </h1>
+              </h2>
               <span className="text-gray-600 font-medium text-sm md:text-base">
                 (Data Scientist & Mentor)
               </span>

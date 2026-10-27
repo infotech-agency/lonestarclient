@@ -360,7 +360,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   <div className="rounded-2xl border border-white/10 bg-white/10 px-4 py-3 backdrop-blur-md">
                     <div className="flex items-center gap-2">
                       <IndianRupee size={18} className=" text-yellow-400" />
-                      <span className="text-sm">4000</span>
+                      <span className="text-sm">40000</span>
                     </div>
                   </div>
 

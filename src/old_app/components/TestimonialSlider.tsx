@@ -5,102 +5,95 @@ import { motion } from "motion/react";
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 
 const testimonials = [
-  {
-    name: "Aman Gupta",
-    course: "Data Science",
-    company: "Amazon",
-    rating: 5,
-    text: "Lone Star Academy transformed my career. The practical projects and interview preparation helped me build the confidence I needed to start my career in data science.",
-    avatar: "AG",
-  },
-  {
-    name: "Sneha Patel",
-    course: "Digital Marketing",
-    company: "Flipkart",
-    rating: 5,
-    text: "The digital marketing course was comprehensive and practical. The trainers explained concepts with real-world examples and the placement support was very helpful.",
-    avatar: "SP",
-  },
-  {
-    name: "Rahul Mehra",
-    course: "Business Analytics",
-    company: "Deloitte",
-    rating: 5,
-    text: "The Power BI and Tableau training was excellent. Working on practical dashboards and getting interview preparation made a big difference in my job search.",
-    avatar: "RM",
-  },
-  {
-    name: "Priya Sharma",
-    course: "Cloud Computing",
-    company: "TCS",
-    rating: 5,
-    text: "I started with very little cloud knowledge. The hands-on AWS training and practical deployment projects helped me understand cloud computing with confidence.",
-    avatar: "PS",
-  },
-  {
-    name: "Vikas Kumar",
-    course: "Data Analytics",
-    company: "Infosys",
-    rating: 4,
-    text: "The SQL, Excel and Python modules were very practical. The projects helped me understand how analytics is actually used in real business situations.",
-    avatar: "VK",
-  },
-  {
-    name: "Ankita Singh",
-    course: "Data Science",
-    company: "Wipro",
-    rating: 5,
-    text: "The machine learning projects gave me practical experience that I could discuss during interviews. The mentors were supportive throughout the learning journey.",
-    avatar: "AS",
-  },
-  {
-    name: "Mohit Verma",
-    course: "Digital Marketing",
-    company: "Publicis",
-    rating: 5,
-    text: "The combination of SEO, Google Ads, social media and practical assignments gave me a strong foundation to begin my career in digital marketing.",
-    avatar: "MV",
-  },
-  {
-    name: "Ritika Jain",
-    course: "Business Analytics",
-    company: "EY",
-    rating: 5,
-    text: "The curriculum was well structured and the trainers were approachable. The placement team also helped me prepare for interviews and improve my confidence.",
-    avatar: "RJ",
-  },
-  {
-    name: "Karan Malhotra",
-    course: "Cloud Computing",
-    company: "Accenture",
-    rating: 5,
-    text: "The Cloud Computing program gave me hands-on experience with AWS, Docker and real deployment projects. The practical approach made cloud concepts much easier to understand.",
-    avatar: "KM",
-  },
-  {
-    name: "Neha Kapoor",
-    course: "Data Analytics",
-    company: "HCLTech",
-    rating: 5,
-    text: "Learning SQL, Excel and Power BI through practical projects was extremely useful. Building real-world dashboards also helped me create a stronger portfolio.",
-    avatar: "NK",
-  },
-  {
-    name: "Arjun Bansal",
-    course: "Data Science",
-    company: "Capgemini",
-    rating: 5,
-    text: "The Data Science course covered Python, machine learning and projects in a structured way. The mentors were always available whenever I needed guidance.",
-    avatar: "AB",
-  },
-  {
-    name: "Simran Kaur",
-    course: "Digital Marketing",
-    company: "Dentsu",
-    rating: 5,
-    text: "The practical assignments helped me understand SEO, Google Ads, social media marketing and analytics. I especially enjoyed working on agency-style projects.",
-    avatar: "SK",
-  },
+  { name: "Aman Gupta", course: "Data Science", company: "Amazon", rating: 5, text: "Lone Star Academy transformed my career. Within 3 months of completing the Data Science course, I landed a job at Amazon with a 3x salary hike.", avatar: "AG" },
+  { name: "Sneha Patel", course: "Digital Marketing", company: "Flipkart", rating: 5, text: "The digital marketing course was comprehensive and practical. The trainers have real industry experience and the placement support was excellent.", avatar: "SP" },
+  { name: "Rahul Mehra", course: "Business Analytics", company: "Deloitte", rating: 5, text: "Best analytics institute in Delhi. The Power BI and Tableau training was world-class. Got placed in Deloitte thanks to their interview prep sessions.", avatar: "RM" },
+  { name: "Priya Sharma", course: "Cloud Computing", company: "TCS", rating: 5, text: "I had zero cloud knowledge before joining. After 80 days of training, I passed my AWS Solutions Architect exam and got a great job in TCS.", avatar: "PS" },
+  { name: "Vikas Kumar", course: "Data Analytics", company: "Infosys", rating: 4, text: "Quality training with practical projects. The SQL and Python modules were exceptional. Highly recommend to anyone looking to enter data analytics.", avatar: "VK" },
+  { name: "Ankita Singh", course: "Data Science", company: "Wipro", rating: 5, text: "The machine learning project experience helped me crack interviews at 3 top companies. I chose Wipro and I'm loving every day of my new career.", avatar: "AS" },
+  { name: "Mohit Verma", course: "Digital Marketing", company: "Publicis", rating: 5, text: "From a fresher to a Digital Marketing Executive in 2 months. The Google certification training and agency internship were game changers.", avatar: "MV" },
+  { name: "Ritika Jain", course: "Business Analytics", company: "EY", rating: 5, text: "Amazing trainers and curriculum. Lone Star Academy's placement team worked tirelessly to get me interviews. Now working at EY as a Business Analyst.", avatar: "RJ" },
+
+    // New Testimonials
+  { name: "Karan Malhotra", course: "Cloud Computing", company: "Accenture", rating: 5, text: "The Cloud Computing program gave me strong hands-on experience with AWS, Docker and real deployment projects. The mock interviews helped me confidently prepare for my first cloud role.", avatar: "KM" },
+
+  { name: "Neha Kapoor", course: "Data Analytics", company: "HCLTech", rating: 5, text: "The practical approach made learning SQL, Excel and Power BI much easier. Working on real-world dashboards helped me build a strong portfolio for data analyst interviews.", avatar: "NK" },
+
+  { name: "Arjun Bansal", course: "Data Science", company: "Capgemini", rating: 5, text: "The Data Science course covered Python, machine learning and projects in a very structured way. The mentors were always available to clear doubts and guide me during interview preparation.", avatar: "AB" },
+
+  { name: "Simran Kaur", course: "Digital Marketing", company: "Dentsu", rating: 5, text: "I learned SEO, Google Ads, social media marketing and analytics through practical assignments. The agency-style projects gave me the confidence to start my career in digital marketing.", avatar: "SK" },
+
+  // More Testimonials
+{
+  name: "Rahul Sharma",
+  course: "Full Stack Development",
+  company: "TCS",
+  rating: 5,
+  text: "The Full Stack Development program helped me master React, Node.js and MongoDB through hands-on projects. The structured curriculum and mentor guidance helped me prepare for real-world development challenges.",
+  avatar: "RS"
+},
+
+{
+  name: "Priya Verma",
+  course: "Python Programming",
+  company: "Infosys",
+  rating: 5,
+  text: "The practical Python sessions made complex concepts easy to understand. Working on real projects and receiving personalized feedback helped me improve my coding skills and build confidence for technical interviews.",
+  avatar: "PV"
+},
+
+{
+  name: "Rohit Mehta",
+  course: "Financial Modeling",
+  company: "Wipro",
+  rating: 5,
+  text: "The cybersecurity training provided hands-on exposure to network security, ethical hacking and vulnerability assessment. The practical labs and expert mentorship helped me understand industry practices and prepare for my career.",
+  avatar: "RM"
+},
+
+{
+  name: "Ananya Singh",
+  course: "Data Analyst",
+  company: "Accenture",
+  rating: 5,
+  text: "The UI/UX course helped me understand user research, wireframing and prototyping using Figma. Working on real design projects helped me create a professional portfolio and approach design challenges with confidence.",
+  avatar: "AS"
+},
+{
+  name: "Arjun Sharma",
+  course: "Digital Marketing",
+  company: "TCS",
+  rating: 5,
+  text: "The full stack development course provided a strong foundation in frontend and backend technologies. Building real-world projects helped me understand application development and improve my problem-solving skills.",
+  avatar: "AS"
+},
+
+{
+  name: "Neha Gupta",
+  course: "Data Science",
+  company: "Capgemini",
+  rating: 5,
+  text: "The data science training made Python, data analysis and machine learning concepts easy to understand. Practical assignments and project-based learning helped me gain confidence in working with real datasets.",
+  avatar: "NG"
+},
+
+{
+  name: "Vikram Patel",
+  course: "Cloud Computing",
+  company: "Accenture",
+  rating: 5,
+  text: "The cloud computing course offered valuable hands-on experience with cloud infrastructure, deployment and essential cloud services. The practical sessions helped me understand real-world cloud environments and strengthen my technical knowledge.",
+  avatar: "VP"
+},
+
+{
+  name: "Sneha Kapoor",
+  course: "Python Programming",
+  company: "Wipro",
+  rating: 5,
+  text: "The Java programming sessions explained core concepts, object-oriented programming and coding practices in a simple way. Regular coding exercises and instructor guidance helped me improve my programming skills and prepare for technical interviews.",
+  avatar: "SK"
+},
 ];
 
 export function TestimonialsSlider() {

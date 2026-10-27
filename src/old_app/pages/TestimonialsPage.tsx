@@ -44,7 +44,7 @@ const testimonials = [
 
 {
   name: "Rohit Mehta",
-  course: "Cyber Security",
+  course: "Financial Modeling",
   company: "Wipro",
   rating: 5,
   text: "The cybersecurity training provided hands-on exposure to network security, ethical hacking and vulnerability assessment. The practical labs and expert mentorship helped me understand industry practices and prepare for my career.",
@@ -53,13 +53,47 @@ const testimonials = [
 
 {
   name: "Ananya Singh",
-  course: "UI/UX Design",
+  course: "Data Analyst",
   company: "Accenture",
   rating: 5,
   text: "The UI/UX course helped me understand user research, wireframing and prototyping using Figma. Working on real design projects helped me create a professional portfolio and approach design challenges with confidence.",
   avatar: "AS"
 },
+{
+  name: "Arjun Sharma",
+  course: "Digital Marketing",
+  company: "TCS",
+  rating: 5,
+  text: "The full stack development course provided a strong foundation in frontend and backend technologies. Building real-world projects helped me understand application development and improve my problem-solving skills.",
+  avatar: "AS"
+},
 
+{
+  name: "Neha Gupta",
+  course: "Data Science",
+  company: "Capgemini",
+  rating: 5,
+  text: "The data science training made Python, data analysis and machine learning concepts easy to understand. Practical assignments and project-based learning helped me gain confidence in working with real datasets.",
+  avatar: "NG"
+},
+
+{
+  name: "Vikram Patel",
+  course: "Cloud Computing",
+  company: "Accenture",
+  rating: 5,
+  text: "The cloud computing course offered valuable hands-on experience with cloud infrastructure, deployment and essential cloud services. The practical sessions helped me understand real-world cloud environments and strengthen my technical knowledge.",
+  avatar: "VP"
+},
+
+{
+  name: "Sneha Kapoor",
+  course: "Python Programming",
+  company: "Wipro",
+  rating: 5,
+  text: "The Java programming sessions explained core concepts, object-oriented programming and coding practices in a simple way. Regular coding exercises and instructor guidance helped me improve my programming skills and prepare for technical interviews.",
+  avatar: "SK"
+},
 ];
 
 export default function TestimonialsPage() {
