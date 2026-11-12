@@ -94,6 +94,40 @@ const testimonials = [
   text: "The Java programming sessions explained core concepts, object-oriented programming and coding practices in a simple way. Regular coding exercises and instructor guidance helped me improve my programming skills and prepare for technical interviews.",
   avatar: "SK"
 },
+
+{
+  name: "Aarav Sharma",
+  course: "Data Analytics",
+  company: "Deloitte",
+  rating: 5,
+  text: "The practical sessions helped me understand Excel, SQL and Power BI step by step. Building dashboards with real datasets improved my confidence in analysing data and explaining the findings clearly.",
+  avatar: "AS"
+},
+{
+  name: "Priya Mehta",
+  course: "Full Stack Development",
+  company: "Infosys",
+  rating: 5,
+  text: "Working on frontend and backend projects helped me understand how a complete web application works. The coding assignments and feedback from trainers made it easier to connect React, Node.js and databases.",
+  avatar: "PM"
+},
+{
+  name: "Rohan Verma",
+  course: "Digital Marketing",
+  company: "Cognizant",
+  rating: 5,
+  text: "The course helped me understand SEO, Google Ads and social media campaigns through practical tasks. Creating campaign plans and reviewing performance reports gave me a clearer understanding of how to measure marketing results.",
+  avatar: "RV"
+},
+{
+  name: "Ishita Singh",
+  course: "Python Programming",
+  company: "TCS",
+  rating: 5,
+  text: "I started with little coding experience, and the structured lessons helped me build a strong foundation in Python. Regular exercises and small projects made functions, data structures and problem-solving easier to understand.",
+  avatar: "IS"
+},
+
 ];
 
 export function TestimonialsSlider() {

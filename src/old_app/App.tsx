@@ -38,6 +38,8 @@ import BlogPage from './pages/BlogPage';
 import BlogSection from './pages/BlogSection';
 import TestimonialsSlider from './components/TestimonialSlider';
 import FullWidthMap from './components/FullWidthMap';
+import HomePlacementsSlider from './components/HomePlacementsSlider';
+import HomeBlogSlider from './components/HomeBlogSlider';
 
 function CourseDetails() {
   const { slug } = useParams();
@@ -221,7 +223,7 @@ export default function App() {
         <ExpertRecommendedCourses />
         <SuccessStories />
         <WhyChooseUsSection />
-        <PlacedStudents />
+        <HomePlacementsSlider/>
         <New />
         <CertificateSection />
 
@@ -431,7 +433,7 @@ export default function App() {
         <OurBranches />
         <Faq />
         <LoneStarBanner />
-        <BlogSection/>
+        <HomeBlogSlider/>
         <FullWidthMap/>
         <Footer />
         <FloatingButtons />
