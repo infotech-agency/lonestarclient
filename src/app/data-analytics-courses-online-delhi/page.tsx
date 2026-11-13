@@ -23,6 +23,7 @@ import { PlacedStudents } from "../../old_app/components/PlacedStudents";
 import TestimonialsSlider from "../../old_app/components/TestimonialSlider";
 import CertificateSection from "../../old_app/components/ui/CertificateSection";
 import FemaleMentorProfile from "../../old_app/components/FemaleMentorProfile";
+import HomePlacementsSlider from "../../old_app/components/HomePlacementsSlider";
 
 interface Course {
   _id: string;
@@ -831,7 +832,7 @@ const handleSubmit = (e: React.FormEvent) => {
 
         <CertificateSection />
         <FemaleMentorProfile/>
-        <PlacedStudents />
+        <HomePlacementsSlider/>
         <TestimonialsSlider />
         <FullWidthMap />
         <Footer />

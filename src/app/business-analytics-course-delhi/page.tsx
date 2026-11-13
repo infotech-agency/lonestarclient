@@ -25,6 +25,7 @@ import FullWidthMap from "../../old_app/components/FullWidthMap";
 import { PlacedStudents } from "../../old_app/components/PlacedStudents";
 import TestimonialsSlider from "../../old_app/components/TestimonialSlider";
 import CertificateSection from "../../old_app/components/ui/CertificateSection";
+import HomePlacementsSlider from "../../old_app/components/HomePlacementsSlider";
 
 interface Course {
   _id: string;
@@ -796,7 +797,7 @@ const handleSubmit = (e: React.FormEvent) => {
         </section>
 
         <CertificateSection />
-        <PlacedStudents />
+        <HomePlacementsSlider/>
         <TestimonialsSlider />
         <FullWidthMap />
         <Footer />
