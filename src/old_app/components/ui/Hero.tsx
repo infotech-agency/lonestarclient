@@ -65,9 +65,10 @@ const HeroSection: React.FC = () => {
           </span> */}
 
           <h1 className="mt-6 text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl md:text-6xl">
-         Delhi's Best{" "}
+         Best Data Science{" "}
             <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">
-              Data Science & Digital Marketing
+              & Data Analytics Institute in Delhi.
+
 
             </span>{" "}
 Institute.          </h1>

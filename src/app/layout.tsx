@@ -3,9 +3,9 @@
   import '../styles/tailwind.css';
 
   export const metadata: Metadata = {
-    title: 'Best Data Science & Digital Marketing Institute in Delhi | Lone Star Academy',
-    description: "Enroll at Lone Star Academy - a trusted data science institute in Delhi, digital marketing institute in Delhi with courses in Data Analytics, Business Analytics, and Cloud Computing.",
-    keywords: "data science institute in delhi, best data science institute in delhi, best data science institute in india, data science institute, digital marketing institute in delhi, best digital marketing institute, best digital marketing institute in delhi, digital marketing institute, best digital marketing institute in delhi with placement, top digital marketing institute in delhi, best offline digital marketing institute in delhi",
+    title: 'Data Science & Data Analytics Institute in Delhi | Lone Star Academy',
+    description: "Join a leading data science institute in Delhi & data analytics institute in Delhi. Learn from experts with live projects, practical training and placement support.",
+    keywords: "data science institute, data science institute in delhi, data science training institute, best data science institute in delhi, best institute for data science in delhi, data analytics institute in delhi, best data analytics institute in delhi, best institute for data analytics in delhi, best institute of data analytics in delhi",
     openGraph: {
       type: 'website',
       url: 'https://www.lonestaracademy.in/',
