@@ -71,7 +71,7 @@ const HeroSection: React.FC = () => {
 
 
             </span>{" "}
-Institute.          </h1>
+         </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg lg:mx-0">
         Lone Star Academy, a proud member of the National Career Service (Ministry of Labour & Employment), was established in 2013 by a USA-based data scientist.
